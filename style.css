@@ -18,8 +18,9 @@ body{
   }
 
   #calculator {
-    width: 350px;
-    height: 500px;
+    width: 70%;
+    max-width: 350px;
+    height: auto;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -29,6 +30,7 @@ body{
     grid-gap: 5px;
     transition: 0.5s;
     overflow: hidden;
+    margin: 0 auto;
   }
 
   #calculator:hover {
@@ -70,4 +72,10 @@ body{
 
   button.symbols:hover {
     background-color: #e07b00;
+  }
+
+  @media only screen and (max-width:370px) {
+    h1{
+      font-size: 1.4em;
+    }
   }
